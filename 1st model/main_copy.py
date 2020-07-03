@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 roadRange= 100000 #range of road in meters
 roadLanes = 2
 safeDistance = 9 #meters apart from each other
-
+carsOnTheRoad = 80
 class Vehicle:
   def __init__(self, speed, origin, originLane, destination, destinationLane, currentLane):
     self.id = ''.join(random.SystemRandom().choice(string.ascii_letters + string.digits) for _ in range(20))
@@ -24,8 +24,10 @@ class Vehicle:
     self.locationMap = []
     self.Velocities = []
 cars = []
-for c in range(60):
-    cars.append(Vehicle(random.randint(90,160), random.randint(-10,50), random.randint(1, roadLanes), random.randint(50,roadRange), random.randint(1, roadLanes) ,random.randint(1, roadLanes)))    
+for c in range(int(carsOnTheRoad/2)):
+    cars.append(Vehicle(random.randint(90,160), random.randint(-200,50), random.randint(1, roadLanes), random.randint(50,roadRange), random.randint(1, roadLanes) ,random.randint(1, roadLanes)))    
+for c in range(int(carsOnTheRoad/2)):
+    cars.append(Vehicle(random.randint(90,160), random.randint(-200,-10), random.randint(1, roadLanes), random.randint(50,roadRange), random.randint(1, roadLanes) ,random.randint(1, roadLanes)))    
 
 carsInRange = len(cars)
 def getSituation():
@@ -99,9 +101,7 @@ def augmentDrive():
         plotDrive(car)  
         #print(car.locationMap)
         generateVelocities(car)
-        generateTransitions(car)
-        
-
+        generateTransitions(car)        
 augmentDrive()
 for car in cars:
     plt.plot(car.Velocities)     

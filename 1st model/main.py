@@ -2,7 +2,7 @@ import random
 import string
 import matplotlib.pyplot as plt
 
-roadRange= 80000 #range of road in meters
+roadRange= 5000 #range of road in meters
 roadLanes = 8
 safeDistance = 8 #meters apart from each other
 
