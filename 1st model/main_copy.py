@@ -2,9 +2,9 @@ import random
 import string
 import matplotlib.pyplot as plt
 
-roadRange= 100000 #range of road in meters
-roadLanes = 2
-safeDistance = 9 #meters apart from each other
+roadRange     = 100000 #range of road in meters
+roadLanes     = 2
+safeDistance  = 9 #meters apart from each other
 carsOnTheRoad = 80
 class Vehicle:
   def __init__(self, speed, origin, originLane, destination, destinationLane, currentLane):
