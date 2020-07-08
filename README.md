@@ -2,6 +2,11 @@
 An algorithm to suggest optimal driver behaviour based on basic factors to optimise time on the rode and prevent unwanted situations
 ## about
 Bright Avenue creates the perfect collective driving plan for every vehicle that it has in range. this can be used to optimize time on the road and for collison avoidance
+## latest results
+[data]()
+[graph]()
+[video]()
+
 ### core of 3rd model
 ```
   def project():
