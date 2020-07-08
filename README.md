@@ -1,5 +1,5 @@
 # What Is Bright Avenue?
-An algorithm to suggest optimal driver behaviour based on basic factors to optimise time on the rode and prevent unwanted situations
+An algorithm to suggest optimal driver behaviour based on basic factors to optimise time on the road and prevent unwanted situations
 ## about
 Bright Avenue creates the perfect collective driving plan for every vehicle that it has in range. this can be used to optimize time on the road and for collison avoidance
 ## [latest results](https://github.com/danalves24com/bright.avenue/tree/master/results/model%203/test%203)
